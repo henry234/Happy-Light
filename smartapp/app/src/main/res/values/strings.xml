@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmartTrafficSignal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="action_logout">Logout</string>
+    <string name="label_Speak">Bạn muốn đi đâu ?</string>
+    <string name="speech_not_supported">Thiết bị của bạn không hỗ trợ chức năng này</string>
+    <string name="feedback_email" translatable="false">tahituuit@gmail.com</string>
+
+    <string name="tx_07">Ứng dụng đến từ Trường Đại Học Công Nghệ Thông Tin- ĐHQG HCM.\nSmart Going là ứng dụng tìm đường thông minh cho phép người dùng tìm kiếm đường đi giữa nhiều địa điểm trong cùng 1 lúc.</string>
+    <string name="tx_08"><u>Cách sử dụng:</u></string>
+    <string name="tx_09">Liên hệ với chúng tôi qua địa chỉ: LouisChanUIT@gmail.com</string>
+    <string name="tx_19">Website :\nwww.LouisChan.com</string>
+    <string name="tx_41">Rất đơn giản, bạn hãy ấn vào nút Tìm Đường hoặc lịch sử để bắt đầu tìm kiếm. Việc đầu tiên bạn cần làm đó là nhập từng địa điểm muốn tới bằng cách ấn vào ô TextView tương ứng. Smart Going còn hỗ trợ bạn nhập nhanh nhiều địa điểm trong cùng 1 lúc bằng công cụ hỗ trợ giọng nói của Google cung cấp, để làm việc này, bạn chỉ cần ấn vào hình Mic trên màn hình và nói theo cú pháp:
+                            Đi từ A đến B đến C đến D ... hoặc Đi từ A tới B tới C tới D ... Với A, B, C, D là các địa điểm bạn muốn tìm kiếm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="author">Nhập môn ứng dụng di động \n GVHD :\n      ThS Huỳnh Tuấn Anh \n      Ths Huỳnh Nguyễn Khắc Huy\n Nhóm thực hiện : \n \t \t 1.Trần Thị Minh Trang \n \t \t 2. Hoàng Kim Tuấn \n \t \t 3. Nguyễn Minh Hiếu</string>
+
+</resources>

@@ -1,0 +1,26 @@
+.navbar {
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+}
+
+ul.danh-sach {
+    list-style: none;
+    padding: 0;
+}
+
+ul.danh-sach li {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.btn-flat {
+    border-radius: 0px;
+}
+
+.no-padding {
+    padding: 0;
+}
+.ace_editor { height: 200px; }

@@ -1,0 +1,27 @@
+{
+    "name": "hackathon-binh-duong",
+    "version": "1.0.0",
+    "description": "Hackathon Binh Duong",
+    "main": "index.js",
+    "author": "Louis Nguyen",
+    "license": "ISC",
+    "dependencies": {
+      "bootstrap": "4.0.0-alpha.6",
+      "jquery": "^3.0.0",
+      "tether": "latest",
+      "angular": "latest",
+      "angular-ui-router": "1.0.0-beta.3",
+      "oclazyload": "latest",
+      "angular-breadcrumb": "latest",
+      "angular-loading-bar": "latest",
+      "fontawesome": "latest",
+      "simple-line-icons": "latest",
+      "chart.js": "^2.3.0",
+      "angular-chart.js": "^1.0.3",
+      "angular-ckeditor": "^1.0.3",
+      "angular-google-places-autocomplete": "*",
+      "angular-ui-select2": "*",
+      "angular-filemanager": "^1.5.1"
+    }
+  }
+  

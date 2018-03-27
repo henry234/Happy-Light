@@ -1,0 +1,71 @@
+<style type="text/css">
+    @font-face {
+        font-family: '7LED';
+        src: url(/public/fonts/Segment7Standard.otf);
+    }
+    .crop {
+        width: 96px;
+        height: 226px;
+        overflow: hidden;
+        float: left;
+    }
+    .crop img {
+        width: 400px;
+        height: 300px;
+        margin: -22px 0 0 -28px;
+    }
+    .digit {
+        margin: 0px;
+        line-height: 100px;
+        font-size: 100px;
+        font-family: '7LED';
+        text-align: center;
+        background-color: #000;
+        height: 82px;
+    }
+    .red {
+        color: red;
+    }
+    .red img {
+        margin-left: -272px;
+    }
+    .yellow {
+        color: yellow;
+    }
+    .yellow img {
+        margin-left: -150px;
+    }
+    .green {
+        color: lime;
+    }
+    .green img {
+        margin-left: -28px;
+    }
+    .table-scroll {
+        width: 100%;
+    }
+    .table-scroll table {
+        width: 1000px;
+        height: 100%;
+    }
+</style>
+<div class="col-sm-12">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="crop" ng-repeat="i in [0, 1, 2, 3]" ng-class="vm.lanRun==i?(vm.time <= 3 ? 'yellow' : 'green'):'red'">
+                <img src="/public/img/traffic-lights.jpg">
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div style="width: 384px;" ng-class="{'green': vm.time > 3, 'yellow': vm.time <= 3}">
+                <p class="digit">{{ vm.time }}</p>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <p><code>{{ vm.vehicles | json }}</code></p>
+            <p><strong>{{ vm.vehicle }} vehicles</strong></p>
+            <p><strong>{{ vm._time }} seconds</strong></p>
+        </div>
+    </div>
+</div>

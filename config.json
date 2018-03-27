@@ -1,0 +1,5 @@
+﻿{
+    "connectionString": "mongodb://localhost:27017/BinhDuongHackathon",
+    "apiUrl": "http://localhost:3000/api",
+    "secret": "$2a$06$JzlsL5Ld2P8rzxhYn.aDnuXVqqzAz9.P/H.KMDKIAD7rw0ePtvpAS"
+}

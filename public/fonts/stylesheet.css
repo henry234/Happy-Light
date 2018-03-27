@@ -1,0 +1,62 @@
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto Regular'), local('Roboto-Regular'), url(https://fonts.googleapis.com/css?family=Roboto) format('truetype');
+}
+@font-face {
+    font-family: 'utm_avo';
+    src: url('UTMAvo.eot');
+    src: url('UTMAvo.eot?#iefix') format('embedded-opentype'),
+    url('UTMAvo.woff2') format('woff2'),
+    url('UTMAvo.woff') format('woff'),
+    url('UTMAvo.ttf') format('truetype'),
+    url('UTMAvo.svg#utm_avo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'utm_avo';
+    src: url('UTMAvoBold.eot');
+    src: url('UTMAvoBold.eot?#iefix') format('embedded-opentype'),
+    url('UTMAvoBold.woff2') format('woff2'),
+    url('UTMAvoBold.woff') format('woff'),
+    url('UTMAvoBold.ttf') format('truetype'),
+    url('UTMAvoBold.svg#utm_avo') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'verdana';
+    src: url('verdana.eot');
+    src: url('verdana.eot?#iefix') format('embedded-opentype'),
+    url('verdana.woff2') format('woff2'),
+    url('verdana.woff') format('woff'),
+    url('verdana.ttf') format('truetype'),
+    url('verdana.svg#verdana') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'verdana';
+    src: url('verdanab.eot');
+    src: url('verdanab.eot?#iefix') format('embedded-opentype'),
+    url('verdanab.woff2') format('woff2'),
+    url('verdanab.woff') format('woff'),
+    url('verdanab.ttf') format('truetype'),
+    url('verdanab.svg#verdana') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'verdana';
+    src: url('verdanai.eot');
+    src: url('verdanai.eot?#iefix') format('embedded-opentype'),
+    url('verdanai.woff2') format('woff2'),
+    url('verdanai.woff') format('woff'),
+    url('verdanai.ttf') format('truetype'),
+    url('verdanai.svg#verdana') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}

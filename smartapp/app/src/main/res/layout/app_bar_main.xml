@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tahitu.smartgoing.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            fab:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <include layout="@layout/content_main" />
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/fabAdd"
+                android:layout_width="285dp"
+                android:layout_height="386dp"
+
+                fab:fab_addButtonColorNormal="@color/blue"
+                fab:fab_addButtonPlusIconColor="@color/white"
+                fab:fab_labelStyle="@style/menu_labels_style"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="17dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabHistorySearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/white"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    fab:fab_icon="@drawable/ic_history"
+                    fab:fab_title="Lịch sử" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabSearchPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/white"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    fab:fab_icon="@drawable/location"
+                    fab:fab_title="Tìm đường" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabLookup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/white"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    fab:fab_icon="@drawable/find"
+                    fab:fab_title="Tra cứu" />
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_sheet"
+                android:clipToPadding="true"
+                android:layout_gravity="bottom"
+                android:id="@+id/bottom_sheet"
+                android:visibility="gone"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/updownBottomSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/distance"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="km"
+                        android:textSize="16dp"
+                        android:textColor="@color/secondary_text"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tvBestDistance"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="CHI TIẾT CÁCH ĐI"
+                    android:id="@+id/tvChiTietCachDi"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    fab:layout_behavior="@string/bottom_sheet_behavior"
+                    android:textColor="@color/white"
+                    android:background="@color/text"
+                   />
+
+                    <com.twotoasters.jazzylistview.JazzyListView
+                        android:id="@+id/listViewResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="178dp">
+                    </com.twotoasters.jazzylistview.JazzyListView>
+            </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

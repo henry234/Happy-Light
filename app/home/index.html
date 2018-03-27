@@ -1,0 +1,77 @@
+﻿<style>
+    .map {
+        width: 100%;
+        height: 100%;
+        background-color: #ddd;
+        margin-bottom: 30px;
+        position: inherit;
+    }
+    .control {
+        height: 30px;
+        padding: 0 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100000;
+    }
+</style>
+
+
+<div class="modal fade" id="addClusterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form ng-submit="vm.addCluster()" class="form form-horizontal">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cluster Form</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-sm-12">
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3">Cluster</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" placeholder="Cluster name" ng-model="vm.cluster.name"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3">Desc</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" type="text" placeholder="" ng-model="vm.cluster.desc" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12">
+    <div class="row">
+        <div class="col-sm-3" style="min-height: {{ vm.screenHeight - 152 }}px;">
+            <br>
+            <input type="text" class="form-control" placeholder="Filter by name" ng-model="search">
+            <br>
+            <ul class="list-group" style="max-height: {{ vm.screenHeight - 290 }}px; overflow-y: scroll;">
+                <li class="list-group-item" ng-repeat="(idx, elem) in vm.clusters | filter: {name: search}">
+                    <a class="btn btn-link" href="#" ng-click="vm.showCluster(elem._id)">{{ elem.name }}</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#addClusterModal">Add</button>
+        </div>
+        <div class="col-sm-9">
+            <div class="map" id="map"></div>
+            <div class="control" ng-if="vm.enableControl">
+                <a class="btn btn-sm btn-success" href="#" ng-click="vm.addTrafficLight()"><i ng-if="!vm.enableAdd" class="fa fa-plus-circle"></i><i ng-if="vm.enableAdd" class="fa fa-times-circle-o"></i></a>
+                <a class="btn btn-sm btn-info" href="#" ng-click="vm.saveNode()"><i class="fa fa-floppy-o"></i></a>
+                <a class="btn btn-sm btn-danger pull-right" href="#" ng-click="vm.selectNode()"><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

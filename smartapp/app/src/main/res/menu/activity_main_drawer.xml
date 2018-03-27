@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/nav_home"
+            android:title="Trang Chủ" />
+
+    </group>
+
+    <item android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_FeedBack" android:icon="@drawable/nav_bar"
+                    android:title="Phản hồi" />
+                <item android:id="@+id/nav_help" android:icon="@drawable/nav_help"
+                    android:title="Trợ giúp" />
+                <item android:id="@+id/nav_tacgia" android:icon="@drawable/nav_info"
+                    android:title="Thông tin tác giả" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
